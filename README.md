@@ -1,6 +1,10 @@
 # Placeholder-Test
 Project showing data from jsonplaceholder
-
+- Kotlin
+- MVVM
+- Room
+- Databinding
+- Koin
 ## App Demo
 
 <p float="left">
