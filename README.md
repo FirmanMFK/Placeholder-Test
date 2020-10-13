@@ -1,10 +1,13 @@
 # Placeholder-Test
 Project showing data from jsonplaceholder
+this application development using :
 - Kotlin
 - MVVM
 - Room
 - Databinding
 - Koin
+- Retrofit
+
 ## App Demo
 
 <p float="left">
