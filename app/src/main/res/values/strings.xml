@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Placeholder-Test</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="detail">Detail</string>
+    <string name="posts">Post</string>
+    <string name="search">Search</string>
+</resources>

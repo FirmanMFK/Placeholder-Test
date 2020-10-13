@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_main_graph"
+    app:startDestination="@id/postListFragment">
+
+    <fragment
+        android:id="@+id/postListFragment"
+        android:name="id.firman.placeholder_test.views.main.PostListFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/post_list_fragment" >
+        <action
+            android:id="@+id/action_postListFragment_to_detailPostActivity"
+            app:destination="@id/detailPostActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="id.firman.placeholder_test.views.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/search_fragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailPostActivity"
+            app:destination="@id/detailPostActivity"
+            />
+    </fragment>
+    <activity
+        android:id="@+id/detailPostActivity"
+        android:name="id.firman.placeholder_test.views.detail.DetailActivity"
+        android:label="DetailPostActivity"
+        tools:layout="@layout/activity_detail">
+        <argument
+            android:name="id_post"
+            app:argType="integer" />
+    </activity>
+</navigation>
