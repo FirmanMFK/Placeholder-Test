@@ -15,7 +15,7 @@ class PostListViewModel(private val repository: Repository) : ViewModel() {
         get()= _postList
     private val _postList = MutableLiveData<List<PostResponse>>()
 
-    privateval data: LiveData<List<PostResponse>> get() = _postList
+    private val data: LiveData<List<PostResponse>> get() = _postList
 
 
     fun loadInitialData(){
