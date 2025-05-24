@@ -15,12 +15,14 @@ class PostListViewModel(private val repository: Repository) : ViewModel() {
         get()= _postList
     private val _postList = MutableLiveData<List<PostResponse>>()
 
+    privateval data: LiveData<List<PostResponse>> get() = _postList
+
 
     fun loadInitialData(){
         fetchPosts(false)
     }
 
-    fun fetchPosts(needRemoteData: Boolean = false){
+    fun fetchPosts(needRemoteData: Boolean = false) {
         viewModelScope.launch {
             repository.fetchPosts(needRemoteData).collect { posts ->
                 _postList.value = posts
